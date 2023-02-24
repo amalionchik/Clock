@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background: #FDFDFB;
+  overflow-x: hidden;
+  margin: -1px;
+}
+
+.header {
+  margin: 0px 5.2083333333% 0 5.2083333333%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  z-index: 1;
+  background: #FDFDFB;
+  margin: 0px 0px -10px 0px;
+}
+.header__logotype {
+  padding-top: 35px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header__logo {
+  margin: 0px 0px 0px 0px;
+}
+.header__name {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.14em;
+  color: #555248;
+  text-transform: uppercase;
+}
+.header__navigation {
+  margin: 0px 0px 0px 0px;
+}
+.header__container {
+  padding-top: 20px;
+  margin-left: -70px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.header__element {
+  padding: 0px 32.5px 10px 32.5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #555248;
+  display: flex;
+  justify-content: center;
+}
+.header__icons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header__icon {
+  margin: 0px 12px 0px 11px;
+}
+.header__search {
+  margin: 0px 0px 0px 0px;
+}
+.header__like {
+  margin: 0px 0px 0px 0px;
+}
+.header__notification {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: #E6C8B4;
+  border-radius: 50%;
+  margin: -23px 0 0px 15px;
+}
+.header__notification_value {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9px;
+  text-align: center;
+  color: #1B1A17;
+  align-self: center;
+  padding: 2px 0px 0px 0px;
+}
+.header__market {
+  margin: 0px 0px 0px 0px;
+}
+
+.advertisement {
+  margin: 0px 5.2083333333% 0 5.2083333333%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.advertisement__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 236px 0px 236px 120px;
+}
+.advertisement__name {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #1B1A17;
+  margin-bottom: 16px;
+}
+.advertisement__subtitle {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #1B1A17;
+  margin-bottom: 39px;
+}
+.advertisement__slogan {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+  max-width: 258px;
+  margin-bottom: 64px;
+}
+.advertisement__button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #444240;
+  padding: 26px 38px;
+  max-width: 129px;
+}
+.advertisement__product {
+  margin: 0px 0px 0px 0px;
+}
+.advertisement__image {
+  margin: 0px 0px 0px 0px;
+}
+.advertisement__background {
+  position: absolute;
+  width: 496px;
+  height: 944.01px;
+  background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%);
+  mix-blend-mode: normal;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-radius: 0 100% 100% 0/0 50% 50% 0;
+  z-index: -1;
+  -webkit-clip-path: polygon(0% 15%, 100% 15%, 100% 94%, 0% 94%);
+          clip-path: polygon(0% 15%, 100% 15%, 100% 94%, 0% 94%);
+  margin-top: -919px;
+  margin-left: -250px;
+}
+.advertisement__price_text {
+  position: absolute;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1B1A17;
+  margin: -650px 0px 0px -50px;
+}
+.advertisement__options_text {
+  position: absolute;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1B1A17;
+  margin: -175px 0px 0px 425px;
+}
+.advertisement__line {
+  position: absolute;
+}
+.advertisement__line_one {
+  position: absolute;
+  max-width: 50px;
+  margin: 33px 100px 0px -65px;
+}
+.advertisement__line_two {
+  position: absolute;
+  max-width: 50px;
+  margin: -640px 0px 0px 40px;
+}
+.advertisement__line_three {
+  position: absolute;
+  max-width: 50px;
+  margin: -165px 0px 0px 360px;
+}
+
+.popular {
+  padding: 80px 5.2083333333% 56px 5.2083333333%;
+  background: #FFFFFF;
+  z-index: -5;
+}
+.popular__name {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  color: #1B1A17;
+}
+.popular__checkall {
+  text-align: right;
+  margin-bottom: 37px;
+  margin-right: 200px;
+}
+.popular__checkall_text {
+  margin: 0px 0px 0px 0px;
+}
+.popular__checkall_line {
+  position: absolute;
+  max-width: 101px;
+  min-width: 100px;
+  margin: 9px 0px 0px -95px;
+}
+.popular__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.popular__element {
+  padding: 40px 40px 0px 40px;
+  background: #FDFDFB;
+  max-height: 467px;
+  margin-bottom: 30px;
+}
+.popular__element_name {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+  margin-bottom: 10px;
+}
+.popular__element_price {
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+  margin-bottom: 2px;
+}
+.popular__image {
+  margin-bottom: 20px;
+}
+.popular__image_img {
+  margin: 0px 0px 0px 0px;
+}
+.popular__image_background {
+  position: absolute;
+  margin-left: -320px;
+  margin-top: 8px;
+}
+.popular__more {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 9px 126px 9px;
+}
+.popular__more_line {
+  max-width: 30px;
+  margin: 0px 9px 0px 9px;
+}
+.popular__more_text {
+  margin: 0px 9px 0px 9px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1B1A17;
+}
+
+.catalog__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.catalog__image {
+  margin: 52px 0px 0px 0px;
+}
+.catalog__slider {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 20px 0px 0px 345px;
+}
+.catalog__slider_value {
+  margin: 0px 20px 0px 20px;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+.catalog__description {
+  margin: 140px 222px 0px 0px;
+}
+.catalog__description_name {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1B1A17;
+  margin-bottom: 38px;
+}
+.catalog__description_subname {
+  max-width: 376px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #444240;
+  margin-bottom: 45px;
+}
+.catalog__description_button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #D4B098;
+  padding: 26px 38px;
+  max-width: 129px;
+}
+.catalog__background_square {
+  position: absolute;
+  width: 24.375%;
+  height: 519px;
+  margin-top: -2px;
+  background: #F7F5EF;
+  z-index: -2;
+}
+.catalog__background_semicircles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-top: -500px;
+}
+.catalog__background_semicircleup {
+  z-index: -1;
+  margin-top: -300px;
+  margin-right: -230px;
+}
+.catalog__background_semicircledown {
+  margin-top: 10px;
+}
+
+.follow {
+  background: #E5E5E5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 80px 5.2083333333% 90px 5.2083333333%;
+}
+.follow__name {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1B1A17;
+  margin-top: 80px;
+}
+.follow__subname {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #444240;
+  max-width: 376px;
+  margin-top: 40px;
+}
+.follow__icons {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+}
+.follow__instagram {
+  height: 23px;
+}
+.follow__facebook {
+  height: 23px;
+  margin: 0px 18px 0px 18px;
+}
+.follow__twitter {
+  height: 23px;
+}
+.follow__container {
+  display: flex;
+}
+.follow__small {
+  display: flex;
+  flex-direction: column;
+}
+.follow__image1 {
+  max-height: 228px;
+  max-width: 242px;
+  margin-bottom: 10px;
+}
+.follow__image2 {
+  max-height: 222px;
+  max-width: 242px;
+}
+.follow__image3 {
+  margin-left: 10px;
+}
+
+.basement {
+  background: #444240;
+  margin-top: -15px;
+  margin-bottom: -16px;
+}
+.basement__container {
+  padding: 80px 183px 67px 182px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.basement__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.basement__logo_name {
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.14em;
+  color: #FFFFFF;
+}
+.basement__links {
+  margin-left: -40px;
+}
+.basement__links_link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 10px;
+}
+.basement__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 33px;
+}
