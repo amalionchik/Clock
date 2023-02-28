@@ -3,6 +3,128 @@
 
 $indent: calc(100px / 1920px * 100%);
 
+@media screen and (max-width: 1170px) {
+
+	.catalog {
+
+		&__image {
+			display: none;
+		}
+
+		&__slider {
+			display: none;
+		}
+
+		&__background {
+
+			&_square {
+				margin-top: -200px;
+				height: 19px;
+			}
+		}
+
+		&__description {
+
+			&_button {
+				margin-bottom: 120px;
+			}
+		}
+	}
+
+	.follow {
+
+		&__text {
+			margin-top: -60px;
+		}
+
+		&__icon {
+			margin-top: -80px;
+		}
+	}
+}
+
+@media screen and (max-width: 920px) {
+
+	.follow {
+		&__image1 {
+			height: 150px;
+			width: 150px;
+		}
+
+		&__image2 {
+			height: 150px;
+			width: 150px;
+		}
+
+		&__image3 {
+			height: 310px;
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.advertisement {
+		&__image {
+			display: none;
+		}
+	}
+
+	.catalog {
+		.catalog {
+
+			&__description {
+				margin: 140px 10px 0px 10px;
+	
+				&_name {
+				}
+	
+				&_subname {
+				}
+	
+				&_button {
+				}
+			}
+	}
+	
+}
+
+	.follow {
+		&__image1 {
+			display: none;
+		}
+
+		&__image2 {
+			display: none;
+		}
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+	.advertisement {
+
+		&__container{
+
+			&__name {
+				margin-left: -300px;
+			}
+		}
+
+		&__line {
+			&_one {
+				display: none;
+			}
+		}
+	}
+
+	.follow {
+		&__image3 {
+			display: none;
+		}
+	}
+}
+
 body {
 	background: #FDFDFB;
 	overflow-x: hidden;
@@ -17,10 +139,13 @@ justify-content: space-evenly;
 z-index: 1;
 background: #FDFDFB;
 margin: 0px 0px -10px 0px;
+align-items: center;
 
 	&__logotype {
+		padding-bottom: 30px;
 		padding-top: 35px;
 		padding-left: 40px;
+		padding-right: 30px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -67,6 +192,7 @@ margin: 0px 0px -10px 0px;
 	}
 
 	&__icons {
+		padding-bottom: 30px;
 		display: flex;
 		flex-direction: row;
 		padding-top: 35px;
@@ -75,7 +201,7 @@ margin: 0px 0px -10px 0px;
 	}
 
 	&__icon {
-		margin: 0px 12px 0px 11px;
+		margin: 10px 12px 10px 11px;
 	}
 
 	&__search {
@@ -121,7 +247,7 @@ margin: 0px 0px -10px 0px;
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		margin: 236px 0px 236px 120px;
+		margin: 236px 0px 236px 0;
 	}
 
 	&__name {
@@ -260,7 +386,8 @@ margin: 0px 0px -10px 0px;
 	&__checkall {
 		text-align: right;
 		margin-bottom: 37px;
-		margin-right: 200px;
+		margin-right: 10%;
+		margin-top: 25px;
 
 		&_text {
 			margin: 0px 0px 0px 0px;
@@ -383,7 +510,8 @@ margin: 20px 0px 0px 345px;
 	}
 
 	&__description {
-margin: 140px 222px 0px 0px;
+margin: 140px 0px 0px 0px;
+
 		&_name {
 			font-family: 'Playfair Display';
 			font-style: normal;
@@ -424,8 +552,8 @@ margin: 140px 222px 0px 0px;
 		&_square {
 			position: absolute;
 			width: calc(468px / 1920px * 100%);
-			height: 519px;
-			margin-top: -2px;
+			height: 1000px;
+			margin-top: -200px;
 			background: #F7F5EF;
 			z-index: -2;
 		}
@@ -440,10 +568,11 @@ margin: 140px 222px 0px 0px;
 		&_semicircleup {
 			z-index: -1;
 			margin-top: -300px;
-			margin-right: -230px;
+			margin-right: -220px;
 		}
 
 		&_semicircledown {
+			z-index: -1;
 			margin-top: 10px;
 
 		}
@@ -469,6 +598,7 @@ padding: 80px $indent 90px $indent;
 		line-height: 43px;
 		color: #1B1A17;
 		margin-top: 80px;
+		margin-right: 10px;
 	}
 
 	&__subname {
@@ -480,6 +610,7 @@ padding: 80px $indent 90px $indent;
 		color: #444240;
 		max-width: 376px;
 		margin-top: 40px;
+		margin-right: 50px;
 	}
 
 	&__icons {
@@ -525,6 +656,7 @@ padding: 80px $indent 90px $indent;
 	}
 
 	&__image3 {
+		max-height: 460px;
 		margin-left: 10px;
 	}
 }
@@ -535,13 +667,14 @@ margin-top: -15px;
 margin-bottom: -16px;
 
 	&__container {
-		padding: 80px 183px 67px 182px;
+		padding: 80px 183px 7px 182px;
 		display: flex;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 	}
 
 	&__element {
+		margin: 0px 30px 60px 30px;
 	}
 
 	&__logo {
